@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws Hunger - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Jomhuria&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Saira Condensed', sans-serif;
+        }
+
+        .hover-effect:hover {
+            background-color: #044B98;
+            color: white;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-blue-50">
+
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-white shadow-md py-4 px-8 md:px-16 flex justify-between items-center">
+            <div class="logo flex items-center">
+                <img src="Logo.png" alt="Paws Hunger Logo" class="h-16 md:h-20">
+                <div class="logo-text ml-4">
+                    <span class="text-2xl font-bold text-gray-800">Paws</span>
+                    <span class="text-xl font-bold text-gray-600 sub-text">Hunger</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-[#044B98] font-semibold hover:underline transition duration-300">About Us</a>
+                <a href="Volunteer.php" class="text-gray-600 hover:text-[#044B98] font-semibold hover:underline transition duration-300">Engage</a>
+                <a href="Engage.php" class="text-gray-600 hover:text-[#044B98] font-semibold hover:underline transition duration-300">Initiatives</a>
+                <a href="#" class="text-gray-600 hover:text-[#044B98] font-semibold transition duration-300 bg-blue-100 hover:bg-blue-300 hover:text-white rounded-full px-4">Contact</a>
+            </div>
+            <button class="bg-blue-300 hover:bg-blue-400 text-black font-bold py-2 px-6 rounded-full uppercase">Donate</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Us Section -->
+        <section class="bg-white py-12 px-4 md:px-0">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-center text-4xl font-bold text-[#044B98] mb-8">Contact Us</h2>
+                <form id="contactForm" class="space-y-6">
+                    <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6">
+                        <div class="flex-1">
+                            <label class="block text-gray-700 text-sm font-semibold mb-2" for="name">Your Name:</label>
+                            <input name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="flex-1">
+                            <label class="block text-gray-700 text-sm font-semibold mb-2" for="email">Your Email:</label>
+                            <input name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="subject">Your Subject:</label>
+                        <input name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" type="text" id="subject" placeholder="Enter the subject" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="message">Your Message:</label>
+                        <textarea name="message" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="message" rows="6" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="bg-[#044B98] text-white font-bold py-2 px-8 rounded-full transition duration-300 hover-effect" type="submit">
+                            SEND
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Modal for Confirmation Message -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <h2 class="text-xl font-bold text-[#044B98]">We received your email!</h2>
+                <p>We'll contact you soon.</p>
+                <button id="closeModal" class="bg-[#044B98] text-white font-bold py-2 px-6 rounded-full mt-4 hover-effect">OK</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 py-8 text-white">
+        <div class="max-w-5xl mx-auto px-4 md:px-0">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <!-- Image Section -->
+                <div class="flex-1 mb-8 md:mb-0 max-w-xs text-left">
+                    <img src="Logo.png" alt="Paws Hunger Logo" class="h-24 w-auto mt-5">
+                    <p class="mt-5 leading-relaxed">Paws Hunger is a non-profit organization dedicated to providing food and care for animals in need.</p>
+                </div>
+
+                <!-- Links, Contact, Socials Section -->
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-24">
+                    <!-- Quick Links Section -->
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Links</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">About us</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Engage</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Initiatives</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Contact</a></li>    
+                        </ul>
+                    </div>
+
+                    <!-- Contact Us Section -->
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Contact Us</h3>
+                        <div class="mt-3 flex items-center">
+                            <img src="location.png" alt="Location Icon" class="h-5 mr-2">
+                            <p>Mumbai, MH, India</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="phone.png" alt="Phone Icon" class="h-5 mr-2">
+                            <p>+91 9083254585</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="mail.png" alt="Email Icon" class="h-5 mr-2">
+                            <p>contact@pawshunger.co.in</p>
+                        </div>
+                    </div>
+
+                    <!-- Socials Section -->
+                    <div class="text-left">
+                        <h3 class="text-xl font-semibold">Socials</h3>
+                        <div class="flex justify-center items-center mt-3">
+                            <a href="https://www.instagram.com/your_instagram_page/" target="_blank" aria-label="Instagram">
+                                <img src="Insta.png" alt="Instagram Logo" class="h-8">
+                            </a>
+                            <a href="https://www.facebook.com/your_facebook_page/" target="_blank" class="ml-4" aria-label="Facebook">
+                                <img src="facebook.png" alt="Facebook Logo" class="h-8">
+                            </a>
+                            <a href="https://twitter.com/your_twitter_page/" target="_blank" class="ml-4" aria-label="Twitter">
+                                <img src="twitter.png" alt="Twitter Logo" class="h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Example JavaScript for showing confirmation message
+        const form = document.getElementById('contactForm');
+        const confirmationModal = document.getElementById('confirmationModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+            // Show confirmation modal
+            confirmationModal.style.display = 'flex';
+            form.reset(); // Reset the form
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            // Hide modal
+            confirmationModal.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

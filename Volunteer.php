@@ -23,11 +23,12 @@
             </div>
         </div>
         <div class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-600 hover:text-blue-600 font-semibold">About Us</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600 font-semibold">Volunteer</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600 font-semibold">Engage</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600 font-semibold">Contact</a>
-        </div>
+    <a href="#" class="text-gray-600 hover:text-[#044B98] font-semibold transition duration-300">About Us</a>
+    <a href="#" class="text-gray-600 hover:text-[#044B98] font-semibold transition duration-300 bg-blue-100 hover:bg-blue-300 hover:text-white rounded-full px-4">Engage</a>
+    <a href="Engage.php" class="text-gray-600 hover:text-[#044B98] font-semibold transition duration-300">Initiatives</a>
+    <a href="contact.html" class="text-gray-600 hover:text-[#044B98] font-semibold transition duration-300">Contact</a>
+</div>
+
         <button class="bg-blue-300 hover:bg-blue-400 text-black font-bold py-2 px-6 rounded-full uppercase">Donate</button>
     </nav>
 
@@ -40,18 +41,17 @@
         <img src="header.png" alt="Dog and Cat" class="w-64 md:w-96 mt-8 md:mt-0">
     </section>
 
-    <!-- Donate Section -->
-    <section class="bg-white shadow-md p-8 md:p-16 text-center space-y-4">
-        <img src="DonateText.png" alt="Donate" class="mx-auto w-48 md:w-56">
-        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <img src="qrcode.png" alt="QR Code" class="w-40 md:w-48">
-            <div class="text-gray-600 text-left md:pl-10">
-                <p><strong>Online Transaction:</strong> 8777******</p>
-                <p><strong>For Any other queries:</strong></p>
-                <img src="queries.png" alt="Queries" class="mt-4 w-32 md:w-40">
-            </div>
+   <!-- Donate Section -->
+<section class="bg-white shadow-md p-4 md:p-8 text-center space-y-4">
+    <img src="DonateText.png" alt="Donate" class="mx-auto w-56 md:w-64"> 
+    <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-4 md:space-y-0">
+        <img src="qrcode.png" alt="QR Code" class="w-80 md:w-80"> 
+        <div class="text-xl md:text-xl text-gray-600 text-left">
+            <p><strong>Online Transaction:</strong> 8777******</p>
+            <p><strong>For Any other queries: <span class="inline-flex"><img src="queries.png" alt="Queries" class="ml-2 w-6 md:w-8"></span></strong></p>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Volunteer Section -->
     <section class="py-10 bg-white">
@@ -62,25 +62,25 @@
             <div class="volunteer-card bg-white shadow-md p-6 rounded-lg text-center w-64">
                 <h3 class="font-bold text-xl text-gray-800">Feeding Volunteer</h3>
                 <p class="text-gray-600 mt-4">Join our team in providing food to strays, ensuring every stray is well-fed and promoting a healthier environment for these animals.</p>
-                <img src="paw.png" alt="Paw Icon" class="w-16 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form1')">
+                <img src="paw.png" alt="Paw Icon" class="w-8 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form1')">
             </div>
 
             <div class="volunteer-card bg-white shadow-md p-6 rounded-lg text-center w-64">
                 <h3 class="font-bold text-xl text-gray-800">General Volunteer</h3>
                 <p class="text-gray-600 mt-4">Assist in organizing events, helping with shelter management, and supporting the daily operations of our NGO.</p>
-                <img src="paw.png" alt="Paw Icon" class="w-16 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form2')">
+                <img src="paw.png" alt="Paw Icon" class="w-8 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form2')">
             </div>
 
             <div class="volunteer-card bg-white shadow-md p-6 rounded-lg text-center w-64">
                 <h3 class="font-bold text-xl text-gray-800">Rabies Vaccination Drive</h3>
                 <p class="text-gray-600 mt-4">Help us protect strays by organizing and executing vaccination drives to ensure the safety of the animals and the public.</p>
-                <img src="paw.png" alt="Paw Icon" class="w-16 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form3')">
+                <img src="paw.png" alt="Paw Icon" class="w-8 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form3')">
             </div>
 
             <div class="volunteer-card bg-white shadow-md p-6 rounded-lg text-center w-64">
                 <h3 class="font-bold text-xl text-gray-800">PR & Creatives</h3>
                 <p class="text-gray-600 mt-4">Help raise awareness by creating content, managing social media, and engaging in other PR activities for Paws Hunger.</p>
-                <img src="paw.png" alt="Paw Icon" class="w-16 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form4')">
+                <img src="paw.png" alt="Paw Icon" class="w-8 mx-auto cursor-pointer mt-4" onclick="showGoogleForm('form4')">
             </div>
 
         </div>
@@ -94,9 +94,9 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-blue-900 py-10 text-white">
-        <div class="max-w-6xl mx-auto px-4 md:px-0">
+ <!-- Footer Section -->
+ <footer class="bg-blue-900 py-8 text-white">
+        <div class="max-w-5xl mx-auto px-4 md:px-0">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
                 <!-- Image Section -->
                 <div class="flex-1 mb-8 md:mb-0 max-w-xs text-left">
@@ -104,43 +104,58 @@
                     <p class="mt-5 leading-relaxed">Paws Hunger is a non-profit organization dedicated to providing food and care for animals in need.</p>
                 </div>
 
-                <!-- Links and Contact Section -->
-                <div class="flex flex-col md:flex-row items-start md:items-center space-y-8 md:space-y-0 md:space-x-24">
+                <!-- Links, Contact, Socials Section -->
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-24">
                     <!-- Quick Links Section -->
                     <div class="text-left">
                         <h3 class="text-xl font-semibold">Links</h3>
-                        <ul class="mt-4 space-y-3">
-                            <li><a href="#" class="text-white hover:underline">Home</a></li>
-                            <li><a href="#" class="text-white hover:underline">About Us</a></li>
-                            <li><a href="#" class="text-white hover:underline">Volunteer</a></li>
-                            <li><a href="#" class="text-white hover:underline">Adoptions</a></li>
-                            <li><a href="#" class="text-white hover:underline">Contact</a></li>
+                        <ul class="mt-3 space-y-2">
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">About us</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Engage</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Initiatives</a></li>
+                            <li><a href="#" class="text-white hover:text-gray-300 transition duration-300">Contact</a></li>
                         </ul>
                     </div>
 
                     <!-- Contact Us Section -->
                     <div class="text-left">
                         <h3 class="text-xl font-semibold">Contact Us</h3>
-                        <p class="mt-4">Email: info@pawshunger.org</p>
-                        <p class="mt-2">Phone: +123 456 7890</p>
-                        <p class="mt-2">Address: 123 Animal Street, City, Country</p>
+                        <div class="mt-3 flex items-center">
+                            <img src="location.png" alt="Location Icon" class="h-5 mr-2">
+                            <p>Mumbai, MH, India</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="phone.png" alt="Phone Icon" class="h-5 mr-2">
+                            <p>+91 9083254585</p>
+                        </div>
+                        <div class="mt-2 flex items-center">
+                            <img src="mail.png" alt="Email Icon" class="h-5 mr-2">
+                            <p>contact@pawshunger.co.in</p>
+                        </div>
                     </div>
 
                     <!-- Socials Section -->
                     <div class="text-left">
                         <h3 class="text-xl font-semibold">Socials</h3>
-                        <a href="https://www.instagram.com/your_instagram_page/" target="_blank">
-                            <img src="Insta.png" alt="Instagram Logo" class="h-8 mt-1">
-                        </a>
-                        <a href="https://www.facebook.com/your_facebook_page/" target="_blank" class="ml-4">
-                            <img src="facebook.png" alt="Facebook Logo" class="h-8 mt-1">
-                        </a>
+                        <div class="flex justify-center items-center mt-3">
+                            <a href="https://www.instagram.com/your_instagram_page/" target="_blank">
+                                <img src="Insta.png" alt="Instagram Logo" class="h-8">
+                            </a>
+                            <a href="https://www.facebook.com/your_facebook_page/" target="_blank" class="ml-4">
+                                <img src="facebook.png" alt="Facebook Logo" class="h-8">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- All Rights Reserved Section -->
-            <div class="mt-12 text-center">
-                <p>&copy; 2024 Paws Hunger. All rights reserved.</p>
+
+            <!-- All Rights Reserved and Terms Section -->
+            <div class="mt-16 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-center">&copy; 2024 Paws Hunger. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-white hover:text-gray-300  transition duration-300">Terms and Conditions</a> | 
+                    <a href="#" class="text-white hover:text-gray-300  transition duration-300">Privacy Policy</a>
+                </div>
             </div>
         </div>
     </footer>
